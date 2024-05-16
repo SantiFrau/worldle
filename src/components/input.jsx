@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useGlobalState } from "./state";
+import { palabras } from "../data/palabras";
 
 export default function Input(){
 
@@ -12,8 +13,8 @@ export default function Input(){
 
      console.log(palabraEscondida)
 
-    if (inputValue.length === palabraEscondida.length) {
-        setPalabra(inputValue);
+    if (inputValue.length === palabraEscondida.length && palabras.includes(inputValue)) {
+        setPalabra(inputValue.toUpperCase());
         e.target.querySelector('input[type="text"]').value="";
         setError(false)
     } else {

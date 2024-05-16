@@ -11,6 +11,7 @@ export const GlobalStateProvider = ({ children }) => {
   const [palabraEscondida,setPalabraEscondida] = useState(palabras[numeroRandom]);
   const [encontradas,setEncontradas] = useState(Array.from({ length: palabras[numeroRandom].length }, () => 0))
   const [win , setWin] = useState(0) //0 nada 1 win 2 lose
+  const [reset,setReset] = useState(false);
 
 
   return (
@@ -22,7 +23,9 @@ export const GlobalStateProvider = ({ children }) => {
       ,encontradas,
       setEncontradas,
       win,
-      setWin }}>
+      setWin,
+      reset,
+      setReset }}>
       {children}
     </GlobalStateContext.Provider>
   );
