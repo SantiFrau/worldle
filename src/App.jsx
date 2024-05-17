@@ -3,8 +3,6 @@ import Palabra from "./components/palabra";
 import Win from "./components/win";
 export default function App(){
 
-
-
   return(
     <>
     <div className="bg-black w-full h-screen flex flex-col items-center justify-center">
@@ -18,7 +16,6 @@ export default function App(){
     <Win></Win>
     </div>
 
-    
     </>
     
   )
