@@ -26,9 +26,9 @@ export default function Input(){
 
 
     return(
-        <form action="#" onSubmit={handleclick} className="w-1/2 text-white flex flex-col items-center justify-center gap-3 bg-zinc-900 p-5">
-            <input className="w-2/3 bg-zinc-800 " type="text" />
-            <input className="cursor-pointer bg-zinc-800 px-7 py-2 rounded-lg" type="submit" value={"Enviar"} />
+        <form action="#" onSubmit={handleclick} className="w-full text-white flex flex-col items-center justify-center gap-3">
+            <input className="w-full  border-b-4 border-zinc-950 bg-zinc-900 bg-opacity-30 rounded-md " type="text" />
+            <input className="cursor-pointer bg-zinc-900 px-7 py-2 rounded-lg" type="submit" value={"Enviar"} />
             <p className={`${error ? "block" : "hidden" } text-red-400 `}>Ingrese una palabra valida</p>
         </form>
     )

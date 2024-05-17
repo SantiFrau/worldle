@@ -66,7 +66,7 @@ export default function Palabra() {
 
 
                     return (
-                        <div key={i} className={`flex items-center justify-center w-12 h-12 rounded-lg ${ocurrencia ? "bg-green-400" : ((ocurrencia2) ? "bg-amber-400" : "bg-zinc-300")}`}>
+                        <div key={i} className={`flex shadow-w items-center justify-center w-12 h-12 rounded-lg ${ocurrencia ? "bg-green-400" : ((ocurrencia2) ? "bg-amber-400" : "bg-zinc-300")}`}>
                             <p className={`text-center font-bold`}>
                                 {c}
                             </p>
@@ -81,7 +81,7 @@ export default function Palabra() {
   
 
     return (
-        <div className=' w-2/3 h-max flex flex-col gap-2 p-10'>
+        <div className=' w-full h-max flex flex-col gap-5 p-10'>
             <h3 className='w-full text-center text-white text-xl font-bold'>
                 Palabra de {palabraEscondida.length} letras
             </h3>

@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.shadow-w{
+    box-shadow: 0px 1px 30px 2px #aaa;
+}
+
+.shadow-g{
+    box-shadow: 0px 4px 5px 2px #3a3a3a;
+}
